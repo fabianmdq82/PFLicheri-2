@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -73,6 +75,7 @@ main .productos {
 main .logorincon {
   margin: 50px 150px;
   padding: 20px;
+  width: 100%;
 }
 main .logorincon .imagenlogo {
   display: flex;
