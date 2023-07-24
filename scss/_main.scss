@@ -1,0 +1,103 @@
+/*main*/
+
+@import 'mixins';
+
+main{
+    grid-area: main;
+    background-color:$fondo-main;
+    display: grid;
+    justify-items: center;
+
+
+    .texto-consulta{ 
+        padding: 10px;
+        p{
+            text-align: center;
+            font-family:'Roboto', sans-serif;
+            font-size: 25px;
+        }
+    }
+    form{
+        display: grid;
+        justify-content: center;
+        margin: 40px;
+        .formulario{
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+    }
+    img{
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    div h1{
+        color: rgb(243, 109, 214);
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Bagel Fat One', cursiva; 
+        text-shadow: 20px 0px 7px rgb(43, 50, 54);
+        padding: 40px;
+    }
+    .productos{
+        display: flex;  
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .logorincon{
+        margin: 50px 150px;
+        padding: 20px;
+        .imagenlogo{
+            display: flex;
+            flex-direction: column;
+            img{
+                border-radius: 20px;
+            }
+        }
+    }
+    .card{
+        @include tarjeta (antiquewhite, 10px, 20px);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        div{ 
+            h3{
+            text-align: center;
+            padding: 5px;
+            }
+            p{
+            padding: 5px;
+            text-align: center;
+            }
+        }
+        .foto {
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 15px 5px;
+        }
+        .boton {
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 15px 5px;
+        :hover{
+            transform: scale(1.2);
+        }
+        .boton-compra{
+            background-color: rgb(177, 82, 169);
+            padding: 5px;
+            color: bisque;
+            border-radius: 5px;
+            box-shadow: 10px 5px rgba(0,0,0,0.5);
+        }
+        }
+    }
+    .contenedor-formulario{
+        @include tarjeta (antiquewhite, 10px, 20px);
+        display: flex;  
+        justify-content: center;
+        width: 480px;
+        border-radius: 20px;
+    }
+}
+

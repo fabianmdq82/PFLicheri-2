@@ -1,0 +1,182 @@
+/*variables*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Amaranth:wght@700&family=Bagel+Fat+One&family=Hammersmith+One&family=Paytone+One&family=Poppins:ital@0;1&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*body*/
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "section" "footer";
+}
+
+/*header*/
+header {
+  grid-area: header;
+  background-color: rgb(236, 242, 255);
+  padding: 25px;
+}
+
+.navbar-light .navbar-toggler {
+  flex-direction: row-reverse;
+}
+
+/*main*/
+main {
+  grid-area: main;
+  background-color: rgb(229, 209, 250);
+  display: grid;
+  justify-items: center;
+}
+main .texto-consulta {
+  padding: 10px;
+}
+main .texto-consulta p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+main form {
+  display: grid;
+  justify-content: center;
+  margin: 40px;
+}
+main form .formulario {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+main img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+main div h1 {
+  color: rgb(243, 109, 214);
+  text-align: center;
+  font-size: 5vw;
+  font-family: "Bagel Fat One", cursiva;
+  text-shadow: 20px 0px 7px rgb(43, 50, 54);
+  padding: 40px;
+}
+main .productos {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+main .logorincon {
+  margin: 50px 150px;
+  padding: 20px;
+}
+main .logorincon .imagenlogo {
+  display: flex;
+  flex-direction: column;
+}
+main .logorincon .imagenlogo img {
+  border-radius: 20px;
+}
+main .card {
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+main .card div h3 {
+  text-align: center;
+  padding: 5px;
+}
+main .card div p {
+  padding: 5px;
+  text-align: center;
+}
+main .card .foto {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 15px 5px;
+}
+main .card .boton {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 15px 5px;
+}
+main .card .boton :hover {
+  transform: scale(1.2);
+}
+main .card .boton .boton-compra {
+  background-color: rgb(177, 82, 169);
+  padding: 5px;
+  color: bisque;
+  border-radius: 5px;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.5);
+}
+main .contenedor-formulario {
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 480px;
+  border-radius: 20px;
+}
+
+/*section*/
+.aclaracion {
+  grid-area: section;
+  padding: 30px 50px;
+  text-align: center;
+  font-size: 30px;
+  background-image: linear-gradient(to top, rgb(229, 209, 250), rgb(255, 244, 210), rgb(229, 209, 250));
+}
+
+/*footer*/
+footer {
+  grid-area: footer;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgb(255, 244, 210);
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+footer div {
+  padding: 10px;
+}
+footer div p {
+  padding-top: 20px;
+}
+
+/*media 480*/
+@media (min-width: 480px) {
+  main .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*media 768*/
+@media (min-width: 768px) {
+  main .productos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr 1fr;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
