@@ -129,6 +129,9 @@ main .contenedor-formulario {
   width: 520px;
   border-radius: 20px;
 }
+main div .formulario {
+  font-size: 20px;
+}
 
 /*section*/
 .aclaracion {
