@@ -80,6 +80,7 @@ main .logorincon {
 main .logorincon .imagenlogo {
   display: flex;
   flex-direction: column;
+  padding: 20px 30px;
 }
 main .logorincon .imagenlogo img {
   border-radius: 20px;
@@ -123,11 +124,12 @@ main .card .boton .boton-compra {
 main .contenedor-formulario {
   background-color: antiquewhite;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   width: 420px;
   border-radius: 20px;
+  margin: 10px;
 }
 main div .formulario {
   font-size: 18px;
@@ -171,6 +173,9 @@ footer div p {
     padding-right: 60px;
     width: 100%;
   }
+  main .logorincon .imagenlogo {
+    padding: 0px 90px;
+  }
   footer {
     display: flex;
     justify-content: space-between;
@@ -184,6 +189,9 @@ footer div p {
     padding-left: 90px;
     padding-right: 90px;
     width: 100%;
+  }
+  main .logorincon .imagenlogo {
+    padding: 0px 120px;
   }
 }
 

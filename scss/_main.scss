@@ -51,6 +51,7 @@ main{
         .imagenlogo{
             display: flex;
             flex-direction: column;
+            padding: 20px 30px;
             img{
                 border-radius: 20px;
             }
@@ -93,11 +94,12 @@ main{
         }
     }
     .contenedor-formulario{
-        @include tarjeta (antiquewhite, 10px, 20px);
+        @include tarjeta (antiquewhite, 10px, 10px);
         display: flex;  
         justify-content: center;
         width: 420px;
         border-radius: 20px;
+        margin: 10px;
     }
     div .formulario{
         font-size: 18px;
